@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    height: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #1b1b1b;
+    color: rgb(230, 230, 230);
+}
+.logo{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+.menu{
+    text-transform: capitalize;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu li{
+    letter-spacing: .15rem;
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url("../assets/bg.jpg") center/cover no-repeat border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+form{
+    background: #e0dededa;
+    padding: 2rem;
+    height: max-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: .3rem;
+    input{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(227, 227, 227);
+        
+    }
+    button{
+        width: 80%;
+        border: 2px solid rgb(192, 192, 192);
+        cursor: pointer;
+        border-radius: .2rem;
+        padding: .5rem .2rem;
+    }
+
+    .qrContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .5rem;
+        .downloadBtn{
+            padding: 1rem .5rem;
+            width: 150%;
+            background: #09204a8a;
+            border-radius: .5rem;
+            display: grid;
+            place-items: center;
+            color: rgb(247, 247, 247);
+            font-size: 1.3rem;
+
+        }
+    }
+}
+
+
+@media screen and (max-width:520px) {
+    .menu{
+        width: 50%;
+    }
+}
+@media screen and (max-width:420px) {
+    .logo{
+        font-size: 1.1rem;
+    }
+    .menu{
+        width: 60%;
+    }
+}
